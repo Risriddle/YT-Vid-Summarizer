@@ -36,7 +36,7 @@ To run this project, you will need to add the following environment variables to
 
 **Ai**: models/gemini-2.0-flash-exp
 
-(Limited requests totranscript api..would have to renew the api-key after that)
+(Limited requests to transcript api..would have to renew the api-key after that)
 
 ## License
 
