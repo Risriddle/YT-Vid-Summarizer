@@ -1,0 +1,16 @@
+.blinking-cursor {
+    display: inline-block;
+    width: 10px;
+    background: transparent;
+    border-left: 2px solid gray;
+    animation: blink 0.7s step-end infinite;
+  }
+
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: gray;
+    }
+  }
