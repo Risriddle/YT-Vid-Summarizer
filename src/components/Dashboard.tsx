@@ -157,16 +157,7 @@ const handleVideoSubmit = async (url: string) => {
       }
     } 
     catch (error) {
-      if (error instanceof Error) {
-        if (error.message=="parsing Text failed, expected String, but encountered Number")
-          {
-            setError("Please Activate n8n workflow or save the workflow and then activate it again....")
-          }
-          else {setError(error.message);}
-      } 
-      else{
-        setError("Try another video url....")
-      }
+      setError(error instanceof Error?error.message:"Try again!")
  
     } finally {
       setIsGenerating(false)
